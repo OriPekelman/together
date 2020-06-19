@@ -1,4 +1,4 @@
-#Together
+# Together
 
 `together` can run multiple processes, together, such as that they live and die together. It is useful in the case you have a a supervising process that watches a single PID. This can be specifically interesting for container runtimes that expect a single process to run.
 
