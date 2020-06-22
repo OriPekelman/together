@@ -26,8 +26,12 @@ Will spawn two processes, when the first one exits after 5 seconds its sibling w
 
 ## Installation
 
-For the moment, grab the executable built with the github action (compiled for Linux only for the moment).
-
+For the moment, grab the executable built with the github action :
+```
+wget https://github.com/OriPekelman/together/releases/download/v0.1/together
+chmod +x together
+```
+and put it somewher reasonable.
 ## Authors
 
 * **Ori Pekelman** - *Initial work* - [Ori Pekelman](https://github.com/oripekelman)
