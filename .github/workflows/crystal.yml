@@ -17,7 +17,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build
-      run: crystal build together.cr
+      run: crystal build together.cr --release --static
     - name: Archive production artifacts
       uses: actions/upload-artifact@v1
       with:
