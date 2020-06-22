@@ -63,10 +63,12 @@ ARGV.each_with_index  do |arg, i|
    end
 end
 
-puts "Supervising processes: #{processes.keys}"
-
 at_exit{kill_all(processes); puts "Terminated"} 
 
+Fiber.yield
+
+puts "Supervising processes: #{processes.keys}"
+
 while processes
-  Fiber.yield
+  sleep 1.second
 end
